@@ -1,0 +1,126 @@
+.header {
+  min-height: 60px;
+}
+.header__link {
+  font-size: 3vw;
+  color: rgba(53, 53, 53, 0.9);
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0.5rem;
+  transition: color 0.3s;
+}
+.header__link:hover {
+  color: #ff5a5f;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .header__link {
+    font-size: 1em;
+  }
+}
+.header .logo {
+  height: 80px;
+  border-radius: 50%;
+}
+@media (min-width: 768px) {
+  .header .logo {
+    height: 100px;
+  }
+}
+
+.banner {
+  height: 40vh;
+  background-repeat: round;
+}
+@media (min-width: 768px) {
+  .banner {
+    height: 70vh;
+  }
+}
+.banner img {
+  max-width: 100%;
+  max-height: 70vh;
+}
+
+.title {
+  font-size: 5vw;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 1.5em;
+  }
+}
+
+body {
+  background-image: url("../imagenes/fondo.png");
+  background-repeat: repeat;
+  font-family: "Raleway", sans-serif;
+  color: rgba(53, 53, 53, 0.9);
+}
+
+main {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+video {
+  max-width: 100%;
+  border: 5px dashed #ff5a5f;
+  outline: none;
+}
+
+.btn-danger {
+  background-color: #ff5a5f !important;
+  border-color: #ff5a5f !important;
+}
+
+.contacto {
+  padding-bottom: 3rem;
+}
+
+.subtitulo-contacto {
+  font-family: "Major Mono Display", monospace;
+}
+
+.bg-danger {
+  background-color: #ff5a5f !important;
+}
+
+.card.bg-danger {
+  clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
+}
+
+.whatsapp,
+.facebook {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.1rem;
+  transition: background-color 0.3s;
+}
+.whatsapp:hover,
+.facebook:hover {
+  text-decoration: none;
+}
+
+.whatsapp {
+  background-color: rgba(0, 187, 45, 0.9);
+  color: white;
+  border: 1px solid #00bb2d;
+}
+.whatsapp:hover {
+  background-color: #00bb2d;
+  color: white;
+  text-decoration: none;
+}
+
+.facebook {
+  border: 1px solid #007bff;
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,82 @@
+$dark: #353535;
+$danger: #ff5a5f;
+
+@import "./components/header";
+@import "./components/banner";
+
+// font-family: "Major Mono Display", monospace;
+
+body {
+  background-image: url("../imagenes/fondo.png");
+  background-repeat: repeat;
+  font-family: "Raleway", sans-serif;
+  color: rgba($dark, 0.9);
+}
+
+main {
+  width: 100%;
+  background-color: rgba(white, 0.4);
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+video {
+  max-width: 100%;
+  border: 5px dashed $danger;
+  outline: none;
+}
+
+.btn-danger {
+  background-color: $danger !important;
+  border-color: $danger !important;
+}
+
+.contacto {
+  padding-bottom: 3rem;
+}
+
+.subtitulo-contacto {
+  font-family: "Major Mono Display", monospace;
+}
+
+.bg-danger {
+  background-color: $danger !important;
+}
+
+.card.bg-danger {
+  clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
+}
+
+.whatsapp,
+.facebook {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.1rem;
+
+  transition: background-color 0.3s;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.whatsapp {
+  background-color: rgba(#00bb2d, 0.9);
+  color: white;
+
+  border: 1px solid #00bb2d;
+
+  &:hover {
+    background-color: #00bb2d;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.facebook {
+  border: 1px solid #007bff;
+}
